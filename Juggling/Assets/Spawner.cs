@@ -9,7 +9,10 @@ public class Spawner : MonoBehaviour
     GameObject collectible;
     [SerializeField]
     float interval=1.5f;
+    [SerializeField]
+    GameObject ball;
     float last=0;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -5,14 +5,27 @@ using UnityEngine.UI;
 
 
 
+
 public class Ball : MonoBehaviour
 {
-    int score=0;
-    public Text scoreText;
+  
+    [SerializeField]
+    Text scoreText;
+    
+    [SerializeField]
+    Text comboText;
+
+    [SerializeField]
+    float directionscale=1;
+    [SerializeField]
+    AudioClip groundSound;
+    [SerializeField]
+    AudioClip kickSound;
     AudioSource audi;
     Rigidbody body;
-    float last=0;
-    bool click=false;
+    int score=0;
+    int bonus=0;
+    
 
 
     // Start is called before the first frame update
@@ -24,10 +37,13 @@ public class Ball : MonoBehaviour
 
   
     private void OnMouseUp() {
-        body.AddForce(Random.Range(-2.5f,2.5f),Random.Range(5,6),0,ForceMode.Impulse);
+        Vector2 ballv2=transform.position;
+        Vector2 mousePos=Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        float direction=ballv2.x-mousePos.x;
+        body.AddForce(direction*directionscale,Random.Range(5,6),0,ForceMode.Impulse);
         body.AddTorque(Random.Range(-5,5),Random.Range(-5,5),Random.Range(-5,5));
         score++;
-        audi.Play();
+        audi.PlayOneShot(kickSound);
         scoreText.text=score.ToString();
     }
 
@@ -35,19 +51,25 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.transform.tag=="Ground"){
             score=0;
+            bonus=0;
+            Debug.Log(body.velocity.magnitude);
+            audi.PlayOneShot(groundSound,body.velocity.magnitude/100);
         }
     }
 
     private void OnTriggerEnter(Collider other) {
         if(other.transform.tag=="Collectible"){
-            score+=2;
+            bonus++;
+            score+=bonus;
+
             Debug.Log("collected");
             Destroy(other.gameObject);
         }
     }
 
     private void Update() {
-        scoreText.text=score.ToString();
+        scoreText.text=(score+bonus).ToString();
+        comboText.text="Combo: "+bonus;
     }
 
 }
