@@ -6,23 +6,26 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     [SerializeField]
-    GameObject menu;
-    [SerializeField]
     GameObject ball;
+    [SerializeField]
+
+    GameObject highScore;
     [SerializeField]
     GameObject gameUI;
     [SerializeField]
-    Text highScore;
+    GameObject menuUI;
+    
     void Awake(){
         Time.timeScale=0;
-        highScore.text=PlayerPrefs.GetInt("HighScore").ToString();
+        highScore.GetComponent<Text>().text=PlayerPrefs.GetInt("HighScore").ToString();
     }
     
     public void StartGame(){
         Time.timeScale=1;
-        menu.SetActive(false);
         ball.GetComponentInChildren<SphereCollider>().enabled=true;
+        menuUI.SetActive(false);       
         gameUI.SetActive(true);
+
     }
 
 }
