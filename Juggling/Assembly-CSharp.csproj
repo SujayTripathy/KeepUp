@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\Collectible.cs" />
+     <Compile Include="Assets\Menu.cs" />
      <Compile Include="Assets\Spawner.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -591,6 +592,12 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
@@ -600,17 +607,11 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
