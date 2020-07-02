@@ -21,6 +21,8 @@ public class Ball : MonoBehaviour
     AudioClip groundSound;
     [SerializeField]
     AudioClip kickSound;
+    [SerializeField]
+    AudioClip cashCollectSound;
     AudioSource audi;
     Rigidbody body;
     int score=0;
@@ -61,7 +63,7 @@ public class Ball : MonoBehaviour
         if(other.transform.tag=="Collectible"){
             bonus++;
             score+=bonus;
-
+            audi.PlayOneShot(cashCollectSound);
             Debug.Log("collected");
             Destroy(other.gameObject);
         }
