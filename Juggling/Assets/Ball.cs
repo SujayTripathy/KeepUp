@@ -70,6 +70,9 @@ public class Ball : MonoBehaviour
     private void Update() {
         scoreText.text=(score+bonus).ToString();
         comboText.text="Combo: "+bonus;
+        if(score>PlayerPrefs.GetInt("HighScore")){
+            PlayerPrefs.SetInt("HighScore",score);
+        }
     }
 
 }
