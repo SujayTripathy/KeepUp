@@ -8,7 +8,9 @@ using UnityEngine.UI;
 
 public class Ball : MonoBehaviour
 {
-  
+    [SerializeField]
+    Advertisment ad;
+
     [SerializeField]
     Text scoreText;
     
@@ -27,6 +29,8 @@ public class Ball : MonoBehaviour
     Rigidbody body;
     int score=0;
     int bonus=0;
+
+    int numofCollisions=0;
     
 
 
@@ -54,6 +58,11 @@ public class Ball : MonoBehaviour
         if(other.transform.tag=="Ground"){
             score=0;
             bonus=0;
+            numofCollisions++;
+            if(numofCollisions/4==1){
+                ad.ShowAd();
+                numofCollisions=0;
+            }
             Debug.Log(body.velocity.magnitude);
             audi.PlayOneShot(groundSound,body.velocity.magnitude/100);
         }

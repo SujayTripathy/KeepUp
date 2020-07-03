@@ -1908,6 +1908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727d983d25204cc47bb94658841affdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ad: {fileID: 1358877247}
   scoreText: {fileID: 665623046}
   comboText: {fileID: 2068126338}
   directionscale: 2
