@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Advertisment.cs" />
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\Collectible.cs" />
      <Compile Include="Assets\Menu.cs" />
@@ -49,7 +50,6 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\UnityAds\link.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -235,12 +235,6 @@
     </Reference>
     <Reference Include="UnityEditor">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements.Editor">
-        <HintPath>D:/KeepUp/Juggling/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Monetization.Editor">
-        <HintPath>D:/KeepUp/Juggling/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -613,6 +607,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>D:/KeepUp/Juggling/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

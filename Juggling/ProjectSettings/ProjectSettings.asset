@@ -663,10 +663,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: fa0b4299-25f4-40e9-a5ff-50443bbcec39
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Juggling
+  organizationId: champfinal
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
