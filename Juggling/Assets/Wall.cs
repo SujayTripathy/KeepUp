@@ -5,8 +5,8 @@ using UnityEngine;
 public class Wall : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other) {
-        if(other.gameObject.tag=="ball"){
-            other.gameObject.GetComponentInChildren<Rigidbody>().AddForce(new Vector3 (-other.gameObject.GetComponentInChildren<Rigidbody>().velocity.x*3,0,0),ForceMode.Impulse);
+        if(other.gameObject.tag=="Ball"){
+            other.gameObject.GetComponentInChildren<Rigidbody>().AddForce(new Vector3 (-other.gameObject.GetComponentInChildren<Rigidbody>().velocity.x*1.2f,0,0),ForceMode.Impulse);
         }
     }
 }
