@@ -1,4 +1,0 @@
-#Sun Jul 05 03:40:39 IST 2020
-base.0=D\:\\KeepUp\\Juggling\\Temp\\gradleOut\\launcher\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
