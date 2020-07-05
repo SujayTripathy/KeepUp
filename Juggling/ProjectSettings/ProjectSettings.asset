@@ -166,7 +166,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier: {}
   buildNumber: {}
-  AndroidBundleVersionCode: 2
+  AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -240,18 +240,18 @@ PlayerSettings:
   clonedFromGUID: c0afd0d1d80e3634a9dac47e8a0426ea
   templatePackageId: com.unity.template.3d@4.2.5
   templateDefaultScene: Assets/Scenes/SampleScene.unity
-  AndroidTargetArchitectures: 3
+  AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/sujay/Desktop/Keys/user.keystore
-  AndroidKeyaliasName: version1
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 1
+  androidUseCustomKeystore: 0
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -263,7 +263,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: e97f3a2c69bb4ff4fbfd1c6fb601ae33, type: 3}
+      m_Icon: {fileID: 2800000, guid: 46f5d5eaee813dc4588c0a23147bccc8, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -668,8 +668,7 @@ PlayerSettings:
   webGLWasmStreaming: 0
   scriptingDefineSymbols: {}
   platformArchitecture: {}
-  scriptingBackend:
-    Android: 1
+  scriptingBackend: {}
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
